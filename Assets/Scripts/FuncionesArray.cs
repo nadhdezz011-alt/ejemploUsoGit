@@ -75,9 +75,11 @@ public class FuncionesArray : MonoBehaviour
         float sumaNotas = 0;
         for (int i = 0; i < notasAlumno.Length; i++)
         {
-            sumaNotas += notasAlumno[i];
+            sumaNotas = sumaNotas + notasAlumno[i];
         }
-        return sumaNotas / notasAlumno.Length;
+        float media = (float)sumaNotas / notasAlumno.Length;
+
+        return media;
     }
     
 
